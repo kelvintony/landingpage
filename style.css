@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Mono', monospace;
+}
+
+img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* SECTION A */
+.section-a {
+	background-color: #eff2fb;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+}
+
+.section-a h1 {
+	font-size: 50px;
+	font-weight: 700;
+	font-family: 'Montez', cursive;
+}
+
+.section-a p {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+/* SECTION B */
+.section-b-i {
+	max-width: 1000px;
+	margin: 30px auto;
+}
+
+.section-b-i .section-b-i-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.section-b {
+	max-width: 1000px;
+	margin: 20px auto;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 20px;
+}
+
+.section-b img {
+	margin-bottom: 10px;
+}
+
+.section-b-inner-b {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.section-b .blog-sub {
+	font-size: 11px;
+}
+
+/* section c */
+
+.section-c {
+	min-height: 500px;
+	background-color: #1d2b36;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-c-inner {
+	max-width: 1000px;
+	margin: 20px auto;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 20px;
+}
+
+.section-c-inner-box-1 img {
+	height: 40px;
+	width: auto;
+	margin-bottom: 20px;
+}
+
+.section-c-inner h4 {
+	color: whitesmoke;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.section-c-inner p {
+	color: #6395b0;
+	font-size: 14px;
+}
+
+.section-c-inner h2 {
+	color: whitesmoke;
+	font-size: 25px;
+}
+
+/* making the page responsive */
+@media screen and (max-width: 800px) {
+	.section-a {
+		height: 500px;
+	}
+	.section-a h1 {
+		font-size: 35px;
+		font-weight: 600;
+	}
+
+	/* section b */
+	.section-b {
+		grid-template-columns: 1fr;
+	}
+
+	/* section c */
+	.section-c {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.section-c-inner {
+		grid-template-columns: 1fr;
+	}
+
+	section-c-inner-box-1 {
+		text-align: center;
+	}
+}
